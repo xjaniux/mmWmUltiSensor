@@ -1,7 +1,7 @@
 substitutions:
-  devicename: mmw-own name
-  friendly_name: mmw-#own name
-  entity_name: ""`
+  devicename: mmw-template
+  friendly_name: mmw-template
+  entity_name: ""
   tx_pin_ld2450: GPIO17
   rx_pin_ld2450: GPIO16  
 esphome:
@@ -70,7 +70,7 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Mmw-"own name" Fallback Hotspot"
+    ssid: "Mmw-Template Fallback Hotspot"
     password: "MWu6mbisJ2qa"
 
 captive_portal:
@@ -1235,20 +1235,20 @@ sensor:
     address: 0x77
     update_interval: 60s
     temperature: 
-      name: "own temperatura"
+      name: "Template temperatura"
       oversampling: 2X
     pressure:
-      name: "own ciśnienie"
+      name: "Template ciśnienie"
   - platform: aht10
     variant: aht20
     update_interval: 30s
     address: 0x38
     humidity:
-      name: "own Wiglotność"
+      name: "Template Wiglotność"
 
 #Czujnik Natężenia światła
   - platform: bh1750
-    name: "Natężenie Światła own"
+    name: "Natężenie Światła Template"
     address: 0x23
     update_interval: 60s
 
