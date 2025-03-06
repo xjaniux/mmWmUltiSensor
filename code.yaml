@@ -1,6 +1,6 @@
 substitutions:
-  devicename: mmw-template
-  friendly_name: mmw-template
+  devicename: mmw-przyklad
+  friendly_name: mmw-przyklad
   entity_name: ""
   tx_pin_ld2450: GPIO17
   rx_pin_ld2450: GPIO16  
@@ -56,11 +56,11 @@ debug:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "ZpKhqNFtNgWuMdmdfAjLvK1xlbJrOK1SLKf4Tpqs0Ec="
+    key: "your own key"
 
 ota:
   - platform: esphome
-    password: "b75c95de32ddbf25abee87e672d0debf"
+    password: "your own key"
 
 wifi:
   ssid: !secret wifi_ssid
@@ -70,8 +70,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Mmw-Template Fallback Hotspot"
-    password: "MWu6mbisJ2qa"
+    ssid: "Mmw-przyklad Fallback Hotspot"
+    password: "your own password"
 
 captive_portal:
 
@@ -1235,20 +1235,20 @@ sensor:
     address: 0x77
     update_interval: 60s
     temperature: 
-      name: "Template temperatura"
+      name: "przyklad temperatura"
       oversampling: 2X
     pressure:
-      name: "Template ciśnienie"
+      name: "przyklad ciśnienie"
   - platform: aht10
     variant: aht20
     update_interval: 30s
     address: 0x38
     humidity:
-      name: "Template Wiglotność"
+      name: "przyklad Wiglotność"
 
 #Czujnik Natężenia światła
   - platform: bh1750
-    name: "Natężenie Światła Template"
+    name: "przyklad Światła Template"
     address: 0x23
     update_interval: 60s
 
