@@ -1235,10 +1235,10 @@ sensor:
     address: 0x77
     update_interval: 60s
     temperature: 
-      name: "przyklad temperatura"
+      name: "przyklad Temperatura"
       oversampling: 2X
     pressure:
-      name: "przyklad ciśnienie"
+      name: "przyklad Ciśnienie"
   - platform: aht10
     variant: aht20
     update_interval: 30s
@@ -1248,7 +1248,7 @@ sensor:
 
 #Czujnik Natężenia światła
   - platform: bh1750
-    name: "przyklad Światła Template"
+    name: "przyklad Natężenie Światła"
     address: 0x23
     update_interval: 60s
 
